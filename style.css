@@ -1,0 +1,76 @@
+html {
+    width: 100%;
+    background-color: lightgray;
+    min-width: 760px;
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: rgb(48, 48, 48);
+    min-height: 100vh;
+	font-size: 2.5rem;
+    font-family: 'VT323', monospace;
+    color: #39ff14;
+    text-overflow:ellipsis;
+}
+
+hr {
+    border: none;
+    border-top: #39ff14 3px solid;
+}
+
+a {
+    color: #39ff14;
+    transition: 2s;
+}
+
+a:hover {
+    color:#144bff
+}
+
+.main-nav {
+    position: relative;
+    top: -400px;
+}
+
+.top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    color: red;
+}
+@media only screen and (max-width: 1000px) {
+    header, footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-nav {
+        position: static;
+    }
+}
+header {
+    min-height: 100vh;
+}
+header, footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+h1, h3, img {
+    padding: 20px min(4%, 20px);
+    font-weight: normal;
+}
+
+section {
+    width: 70%;
+    margin: auto;
+}
+
+pre {
+    font-family: 'VT323', monospace;
+    white-space: pre-wrap;
+    font-size: 1.6rem;
+}
